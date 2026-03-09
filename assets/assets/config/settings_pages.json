@@ -1,0 +1,371 @@
+[
+  {
+    "path": "root",
+    "title": "設置",
+    "sections": [
+      {
+        "type": "bigSection",
+        "items": [
+          {
+            "type": "defaultSection",
+            "color": "#FF1E88E5",
+            "icon": "dark_mode",
+            "title": "主題",
+            "suffix": "深色模式",
+            "action": "navigate:theme"
+          },
+          {
+            "type": "defaultSection",
+            "color": "#FF4CAF50",
+            "icon": "language",
+            "title": "語言",
+            "suffix": "繁體中文",
+            "action": "navigate:language"
+          },
+          {
+            "type": "defaultSection",
+            "color": "#FFE91E63",
+            "icon": "display_settings",
+            "title": "顯示",
+            "suffix": "自動旋轉",
+            "action": "navigate:display"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "theme",
+    "title": "主題設置",
+    "sections": [
+      {
+        "type": "bigSection",
+        "items": [
+          {
+            "type": "defaultSection",
+            "color": "#FF1E88E5",
+            "icon": "dark_mode",
+            "title": "深色模式",
+            "suffix": "進階",
+            "action": "navigate:theme/dark-mode"
+          },
+          {
+            "type": "defaultSection",
+            "color": "#FF6B5AE0",
+            "icon": "palette",
+            "title": "自訂顏色",
+            "suffix": "自訂",
+            "action": "navigate:theme/customize"
+          },
+          {
+            "type": "defaultSection",
+            "color": "#FF00BCD4",
+            "icon": "spacing",
+            "title": "字體大小",
+            "suffix": "調整",
+            "action": "navigate:theme/font-size"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "theme/dark-mode",
+    "title": "深色模式",
+    "sections": [
+      {
+        "type": "bigSection",
+        "items": [
+          {
+            "type": "defaultSection",
+            "color": "#FF1E88E5",
+            "icon": "brightness_4",
+            "title": "自動深色模式",
+            "suffix": "依系統設定",
+            "action": ""
+          }
+        ]
+      },
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "text",
+            "text": "深色模式",
+            "fontSize": 16,
+            "fontWeight": "w700"
+          },
+          {
+            "type": "spacer"
+          },
+          {
+            "type": "radioGroup",
+            "key": "setting:dark-mode-enable",
+            "defaultValue": false
+          }
+        ]
+      },
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "text",
+            "text": "選項",
+            "fontSize": 14,
+            "fontWeight": "w500"
+          },
+          {
+            "type": "spacer"
+          },
+          {
+            "type": "radioGroup",
+            "key": "setting:dark-mode-style",
+            "options": [
+              {"label": "純黑", "value": 0},
+              {"label": "深灰", "value": 1},
+              {"label": "自訂", "value": 2}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "theme/customize",
+    "title": "自訂顏色",
+    "sections": [
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "colorPicker",
+            "label": "主要色",
+            "key": "setting:primary-color",
+            "defaultValue": "#FF1E88E5"
+          }
+        ]
+      },
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "colorPicker",
+            "label": "次要色",
+            "key": "setting:secondary-color",
+            "defaultValue": "#FF6B5AE0"
+          }
+        ]
+      },
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "colorPicker",
+            "label": "背景色",
+            "key": "setting:background-color",
+            "defaultValue": "#FFFFFFFF"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "theme/font-size",
+    "title": "字體大小",
+    "sections": [
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "text",
+            "text": "整體字體大小",
+            "fontSize": 16,
+            "fontWeight": "w700"
+          },
+          {
+            "type": "spacer"
+          },
+          {
+            "type": "radioGroup",
+            "key": "setting:font-size",
+            "options": [
+              {"label": "小型", "value": 0},
+              {"label": "正常", "value": 1},
+              {"label": "大型", "value": 2},
+              {"label": "特大", "value": 3}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "language",
+    "title": "語言設置",
+    "sections": [
+      {
+        "type": "bigSection",
+        "items": [
+          {
+            "type": "defaultSection",
+            "color": "#FF4CAF50",
+            "icon": "language",
+            "title": "語言",
+            "suffix": "繁體中文",
+            "action": "navigate:language/select"
+          },
+          {
+            "type": "defaultSection",
+            "color": "#FFF57C00",
+            "icon": "text_fields",
+            "title": "地區格式",
+            "suffix": "台灣",
+            "action": "navigate:language/region"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "language/select",
+    "title": "選擇語言",
+    "sections": [
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "radioGroup",
+            "key": "app.language",
+            "options": [
+              {"label": "繁體中文", "value": 0},
+              {"label": "簡體中文", "value": 1},
+              {"label": "English", "value": 2},
+              {"label": "日本語", "value": 3},
+              {"label": "한국어", "value": 4}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "language/region",
+    "title": "地區格式",
+    "sections": [
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "radioGroup",
+            "key": "setting:region",
+            "options": [
+              {"label": "台灣", "value": 0},
+              {"label": "香港", "value": 1},
+              {"label": "中國大陸", "value": 2},
+              {"label": "新加坡", "value": 3}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "display",
+    "title": "顯示設置",
+    "sections": [
+      {
+        "type": "bigSection",
+        "items": [
+          {
+            "type": "defaultSection",
+            "color": "#FFE91E63",
+            "icon": "display_settings",
+            "title": "鎖定方向",
+            "suffix": "自動旋轉",
+            "action": "navigate:display/orientation"
+          },
+          {
+            "type": "defaultSection",
+            "color": "#FF9C27B0",
+            "icon": "brightness_7",
+            "title": "亮度",
+            "suffix": "自動",
+            "action": "navigate:display/brightness"
+          },
+          {
+            "type": "defaultSection",
+            "color": "#FF795548",
+            "icon": "visibility",
+            "title": "螢幕超時",
+            "suffix": "10分鐘",
+            "action": "navigate:display/screen-timeout"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "display/orientation",
+    "title": "鎖定方向",
+    "sections": [
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "radioGroup",
+            "key": "setting:lock-orientation",
+            "options": [
+              {"label": "自動旋轉", "value": 0},
+              {"label": "直向", "value": 1},
+              {"label": "橫向", "value": 2}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "display/brightness",
+    "title": "亮度",
+    "sections": [
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "radioGroup",
+            "key": "setting:brightness",
+            "options": [
+              {"label": "自動", "value": 0},
+              {"label": "保存電力", "value": 1},
+              {"label": "正常", "value": 2},
+              {"label": "明亮", "value": 3}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "display/screen-timeout",
+    "title": "螢幕超時",
+    "sections": [
+      {
+        "type": "customizeSection",
+        "widgets": [
+          {
+            "type": "radioGroup",
+            "key": "setting:screen-timeout",
+            "options": [
+              {"label": "15秒", "value": 15},
+              {"label": "30秒", "value": 30},
+              {"label": "1分鐘", "value": 60},
+              {"label": "5分鐘", "value": 300},
+              {"label": "10分鐘", "value": 600},
+              {"label": "永不", "value": -1}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
