@@ -1,7 +1,7 @@
 {
   "dark_mode": true,
 
-  "primary": "#FFFFFF",
+  "primary": ["#FFFFFF", "#000000"],
 
   "debug_color": "#FFC107",
   "debug_color_2": "#028C6A",
