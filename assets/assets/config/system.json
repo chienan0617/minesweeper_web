@@ -2,7 +2,7 @@
   "application-name": "Minesweeper",
   "pack-name": "dev.cas.minesweeper",
   "release-channel": "alpha",
-  "version": "v0.0.5-alpha",
+  "version": "v0.0.6-alpha",
   "latest-update": {
     "code": "2025.02.15-alpha",
     "summary": "Initial Alpha release",
@@ -11,7 +11,7 @@
   },
   "service-id": "9832-15976098531-32",
   "reset-database": false,
-  "database-version": "v0.0.12",
+  "database-version": "v0.0.18",
   "alpha-policy": {
     "data-stability": "unstable",
     "api-stability": "unstable",
