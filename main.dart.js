@@ -80296,7 +80296,7 @@ ad(){return new A.Wz()}}
 A.Wz.prototype={
 au(){var s,r=this
 r.aI()
-s=new A.P5(A.k7(r.a.c,0,null).j(0),B.WC,$.aK())
+s=new A.P5(A.k7("assets/"+r.a.c,0,null).j(0),B.WC,$.aK())
 r.d=s
 s.cK().bk(new A.aqB(r),t.P).lA(new A.aqC())},
 l(){var s=this.d
@@ -80320,7 +80320,7 @@ A.aqA.prototype={
 $0(){},
 $S:0}
 A.aqC.prototype={
-$1(a){A.ass().$1("\u5f71\u7247\u521d\u59cb\u5316\u5931\u6557: "+A.k(a))},
+$1(a){A.ass().$1("\u5f71\u7247\u521d\u59cb\u5316\u5931\u6557\u8a73\u7d30\u8cc7\u8a0a: "+A.k(a))},
 $S:38}
 A.n_.prototype={
 ad(){return new A.UJ()}}
