@@ -23917,10 +23917,12 @@ a_V:function a_V(){},
 atr(a){return new A.IF(a)},
 IF:function IF(a){this.a=a
 this.b=$},
-axN(a){var s,r=null,q=v.G.window.navigator.userAgent.toLowerCase(),p=B.d.v(q,"iphone")||B.d.v(q,"ipad"),o=B.d.v(q,"crios")||B.d.v(q,"chrome"),n=B.d.v(q,"safari")&&!o,m=B.d.v(q,"android")
-if(p&&n||$.ir().kS("developer",!1,t.y)){s=A.jN(new A.a0v(),r,t.z)
-A.co(a,!1).ih(s)
-return}A.Ym(r,r,!0,r,new A.a0w(p,o,m),a,r,!0,t.z)},
+axN(a){var s,r,q=null,p=v.G.window.navigator.userAgent.toLowerCase(),o=B.d.v(p,"iphone")||B.d.v(p,"ipad"),n=B.d.v(p,"crios")||B.d.v(p,"chrome")
+B.d.v(p,"safari")
+s=B.d.v(p,"android")
+if(o||$.ir().kS("developer",!1,t.y)){r=A.jN(new A.a0v(),q,t.z)
+A.co(a,!1).ih(r)
+return}A.Ym(q,q,!0,q,new A.a0w(o,n,s),a,q,!0,t.z)},
 axM(a,b){var s,r=null,q=A.F("primary")
 q=A.as(38,q.u()>>>16&255,q.u()>>>8&255,q.u()&255)
 s=A.bB(12)
@@ -80215,7 +80217,7 @@ ad(){return new A.RZ()}}
 A.RZ.prototype={
 au(){this.aI()
 $.pG.m(0,"home",A.aAe(this))},
-J(a){var s=this,r=null,q=A.F("bg1"),p=A.F("bg1"),o=t.p,n=A.ck(A.b([A.an(r,r,8),A.jA(r,r,A.ch(B.Hl,26,r),r,r,new A.alf(a),r,r,r),A.an(r,r,8),A.aDS(a,"\u4e0b\u8f09\u5230\u684c\u9762",new A.alg(a))],o),B.B,B.p,B.u)
+J(a){var s=this,r=null,q=A.F("bg1"),p=A.F("bg1"),o=t.p,n=A.ck(A.b([A.an(r,r,8),A.jA(r,r,A.ch(B.Hl,26,r),r,r,new A.alf(a),r,r,r),A.an(r,r,8),A.aDS(a,"\u5b89\u88dd\u5230\u684c\u9762",new A.alg(a))],o),B.B,B.p,B.u)
 return A.iW(A.kA(A.b([A.aKn(),A.an(r,r,8),A.aDS(a,"\u66f4\u591a",r),A.an(r,r,8)],o),r,r,!0,!0,p,r,1,r,r,r,!1,r,!1,r,r,n,200,!0,r,r,r,r,r,r,r,r,r,1,r,!0),q,A.bh(r,A.bQ(A.b([B.y7,new A.oy(4,B.j6,A.bh(r,A.c5(A.a4l("assets/icon/icon.webp",r,r),r,r),B.k,r,B.Aq,r,r,r,r,r,r,r,r,r),r),A.an(r,16,r),A.aU("\u8e29\u5730\u96f7",36,B.a_,A.F("tx1"),!1,r),A.an(r,8,r),A.aU("\u7d93\u5178\u6b3e",20,B.K,A.F("tx2"),!1,r),B.y7,A.bQ(A.b([s.r0("\u7e7c\u7e8c\u73a9\u4e0a\u4e00\u5c40",B.HM,!0,new A.alh(a)),A.an(r,16,r),s.r0("\u95dc\u5361\u6311\u6230",B.Hn,!1,new A.ali(a)),A.an(r,16,r),s.r0("\u65b0\u904a\u6232",B.Hf,!1,new A.alj(a)),A.an(r,16,r),s.r0("\u904a\u73a9\u5b58\u6a94",B.Hp,!1,new A.alk(a)),A.an(r,16,r),s.r0("\u8a2d\u5b9a",B.Hq,!1,new A.all(a))],o),B.B,B.bi,B.u),B.Re],o),B.B,B.bi,B.a7),B.k,r,r,r,r,r,r,r,new A.a6(24,0,24,0),r,r,1/0),r,r,r)},
 r0(a,b,c,d){var s,r,q,p,o,n,m,l=null,k="tx1",j=c?64:56
 if(c)s=A.F(k)
